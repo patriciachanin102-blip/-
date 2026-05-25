@@ -1,0 +1,71 @@
+{
+  "mapId": "default",
+  "active": true,
+  "name": "默认雪墙地图",
+  "version": 1,
+  "settings": {
+    "mirrorChance": 0.38,
+    "varianceBase": 4,
+    "varianceStep": 0.8,
+    "varianceMax": 11,
+    "thresholdBase": 68,
+    "thresholdStep": 2.2,
+    "thresholdMax": 91,
+    "prepBase": 5,
+    "prepStep": 0,
+    "prepMin": 5,
+    "chargeBase": 1.08,
+    "chargeStep": 0.075,
+    "chargeMax": 1.75
+  },
+  "posePresets": [
+    {
+      "id": "star",
+      "name": "大字开合",
+      "tip": "手脚打开，尽量撑满洞口",
+      "pose": {
+        "torso": -90,
+        "lUpperArm": -164,
+        "lLowerArm": -172,
+        "rUpperArm": -16,
+        "rLowerArm": -8,
+        "lUpperLeg": 150,
+        "lLowerLeg": 144,
+        "rUpperLeg": 30,
+        "rLowerLeg": 36
+      }
+    },
+    {
+      "id": "knee",
+      "name": "滑雪抬膝",
+      "tip": "一条腿抬高，另一条腿稳住",
+      "pose": {
+        "torso": -92,
+        "lUpperArm": 166,
+        "lLowerArm": 120,
+        "rUpperArm": -52,
+        "rLowerArm": -70,
+        "lUpperLeg": 112,
+        "lLowerLeg": 88,
+        "rUpperLeg": -26,
+        "rLowerLeg": 32
+      }
+    }
+  ],
+  "levels": [
+    {
+      "presetId": "star",
+      "threshold": 72,
+      "prepTotal": 5,
+      "variance": 4,
+      "mirror": false
+    },
+    {
+      "presetId": "knee",
+      "threshold": 74,
+      "prepTotal": 5,
+      "variance": 5,
+      "mirror": true
+    }
+  ]
+}
